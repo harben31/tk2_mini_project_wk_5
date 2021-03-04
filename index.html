@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container-fluid">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div id="project-modal" class="modal-body" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="container">
+                <div class="row">
+                    <label for="pName">Progjerk name</label>
+                    <input type="text" id="pName" name="pName">
+                </div>
+                <div class="row">
+                    <label for="pName">Pugnerd type</label>
+                    <input type="text" id="pType" name="pName">
+                </div>
+                <div class="row">
+                    <label for="pName">fu money</label>
+                    <input type="text" id="pPay" name="pName">
+                </div>
+                <div class="row">
+                    <label for="pName">done now</label>
+                    <input type="text" id="pDate" name="pName">
+                </div>
+                <button id="btnSubmit" class="btn bg-dark text-white my-1">SUBMIT!</button>
+            </div>
+        </div>
+        
+        <div class="jumbotron jumbotron-fluid text-center bg-warning">
+            <div class="container">
+                <h1 class="display-4">Projects!</h1>
+                <p id="currentTime" class="lead">00:00:00</p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="card col-12 col-md-6 col-lg-3">
+                <div class="card-body">
+                    <h3 class="card-title">Porject!</h3>
+                    <p class="card-text">click the button for porkjets</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project-modal">portnets</button>
+                </div>
+            </div>
+
+            <section class="col-12 col-md-6 col-lg-8">
+                <div class="table-responsive">
+                    <table class="table table-bordered bg-danger text-white">
+                        <thead>
+                            <th>promtent name</th>
+                            <th>tronnet type</th>
+                            <th>FU PAY ME</th>
+                            <th>This done</th>
+                            <th>days until this done</th>
+                            <th>FUCK YOU PAY ME! all</th>
+                        </thead>
+                        <tbody id="projectList">
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+            
+        
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
